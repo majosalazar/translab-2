@@ -1,0 +1,17 @@
+{
+  "name": "translab2.0",
+  "version": "1.0.0",
+  "description": "aplicacion web para ver el saldo de la tarjeta BIP",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Maria José Salazar Flores",
+  "license": "ISC"
+}
