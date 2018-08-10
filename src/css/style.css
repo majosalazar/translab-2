@@ -1,0 +1,31 @@
+body{
+  text-align: center;
+}
+
+.btn {
+  background-color:  	#F5A901;
+}
+
+#imgLogo {
+  width: 8em;
+  margin: 2em;
+}
+
+#logo {
+  color: #F5A901;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+
+}
+
+#login {
+  background-color: #3E3F41;
+}
+
+.btnBox {
+  background-color: #F5A901;
+  color: white;
+  margin: 10px;
+  padding: 15px;
+}
