@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Docum ent</title>
+  <!-- enlace bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <!-- enlace fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- enlace google font -->
+  <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One" rel="stylesheet">
+  <!-- enlace local css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>TRANSLAB</title>
 </head>
+
 <body>
+  <div class="container-fluid">
+    <section id="login">
+      <img src="docs/imagen.png" alt="logo-transLab" id="imgLogo">
+      <p id="logo">TRANS-LAB</p>
+      <form class="px-4 py-3">
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
+        </div>
   
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="inputPass" placeholder="Contraseña" pattern="[0-9]">
+        </div>
+  
+        <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputPass" placeholder="Contraseña" pattern="[0-9]" </div>
+          <button type="submit" class="btn" id="btnLoginIn">INICIAR SESIÓN</button>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+          </div>
+      </form>
+      <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+      <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
+      <div id="passError"></div>
+    </section>
+
+    <!-- navbar -->
+    <div class="pos-f-t" id="navbar" style="display:block;">
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-white p-4">
+            <p class="text-dark"><a href=""><i class="fas fa-usd"></i></a> Ver Saldo</p>
+            <p class="text-dark"><a href=""><i class="fas fa-coins"></i></a> Calcular Tarifa</p>
+            <p class="text-dark"><a href=""><i class="fas fa-user"></i></a> Perfil</p>
+            <p class="text-dark"><a href=""><i class="fas fa-file-text-o"></i></a> Preguntas Frecuentes</p>
+            <p class="text-dark"><a href=""><i class="fas fa-home"></i></a> Home</p>
+          </div>
+        </div>
+      </div>
+      <!-- 1ra pantalla -->
+      <div id = "home" style="display:block;">
+        <div class="btnBox">
+          <a href="" id="btn1">VER SALDO </a>
+        </div>
+        <div class="btnBox">
+          <a href="" id="btn2">CALCULAR TARIFA </a>
+        </div>
+        <div class="btnBox">
+          <a href="" id="btn3">PERFIL </a>
+        </div>
+        <div class="btnBox">
+          <a href="" id="btn4">PREGUNTAS FRECUENTES </a>
+        </div>
+      </div>
+      <!-- 2da pantalla / perfil -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+          <!-- img perfil -->
+          <div id="boxImg">
+            <img src="" alt="imagen de perfil">
+          </div>
+          <div id="boxEmail"></div>
+          <input type="number" id="targetNumber" placeholder="Número de Tarjeta">
+          <button id="btnEnter">AGREGAR TARJETA</button>
+          <div id="printNumberTarget"></div>
+        </div>
+        <div class="col"></div>
+      </div>
+  
+      <!-- 2da pantalla -->
+      <div id="" style="display:block;">
+        <input type="number" id="targetNumber" placeholder="Número de Tarjeta">
+        <div class="row">
+          <div class="col-6">
+            <p>Tarifa</p>
+            <select class="form-control form-control-sm">
+              <option>Small select</option>
+              <option>Small select</option>
+              <option>Small select</option>
+            </select>  
+          </div>  
+          <div class="col-6">
+            <p>Tarjeta</p>
+            <select class="form-control form-control-sm">
+                <option>Small select</option>
+                <option>Small select</option>
+                <option>Small select</option>
+          </div>      
+          <!-- boton calcular -->
+          <button id="btnCalculate">CALCULAR</button>
+          <!-- visualizador  -->
+          <div class="row">
+            <div class="col-"></div>
+            <div class="col-8" id="printData" style="display:block;">
+              <div id="printTarifa"></div>
+              <div id="printTarjeta"></div>
+            </div>
+            <div class="col-"></div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- preguntas frecuentes -->
+      <div id="title">Preguntas Frecuentes</div>
+      <div id="preguntasFrecuentes">
+        
+      </div>
+  </div>
+  <!-- enlaces bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <!-- enlace local js -->
+  <script src=""></script>
+
+
 </body>
+
 </html>
